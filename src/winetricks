@@ -6735,6 +6735,8 @@ load_dotnet462()
         file_package="NDP462-KB3151800-x86-x64-AllOS-ENU.exe"
         unattended_args="/q /norestart"
     fi   
+    
+    w_call remove_mono  
 
     w_call dotnet461
     w_set_winver win7
